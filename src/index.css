@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-ink text-slate-200 font-sans antialiased; margin: 0; }
+
+/* Animações do player */
+@keyframes glow {
+  from { box-shadow: 0 0 0 0 rgba(255,122,0,.55), 0 0 14px rgba(255,122,0,.25); }
+  to   { box-shadow: 0 0 0 4px rgba(255,122,0,0), 0 0 26px rgba(255,122,0,.55); }
+}
+.glow { animation: glow .9s ease-in-out infinite alternate; }
+
+@keyframes eq { 0%, 100% { transform: scaleY(.25); } 50% { transform: scaleY(1); } }
+.eq-bar { transform-origin: bottom; animation: eq .9s ease-in-out infinite; }
+
+@keyframes fill { from { width: 0; } to { width: 100%; } }
+.fill-2s { animation: fill 2s linear forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .glow, .eq-bar, .animate-rise { animation: none; }
+}
