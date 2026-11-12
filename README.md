@@ -40,23 +40,6 @@ JavaScript (ES6+) — Estrutura de dados e lógica das rotas.
 
 💻 Execução Local (Ambiente de Desenvolvedor)
 
-Caso esteja rodando em um computador com Node.js e terminal liberados:
-
-# 1. Clonar o repositório
-git clone https://github.com/icarogancalves/harmoniamusica.git
-
-# 2. Entrar na pasta do projeto
-cd harmoniamusica
-
-# 3. Instalar as dependências
-npm install
-
-# 4. Iniciar o servidor de testes
-npm run dev
-
-# 5. Gerar arquivos estáticos para produção
-npm run build
-
 
 🌐 Deploy no GitHub Pages
 
