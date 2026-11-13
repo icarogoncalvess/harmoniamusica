@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const read = () => window.location.hash.slice(1) || 'home';
 
-/** Roteador mínimo baseado em hash: #home, #import, #song, #learn, #assistant */
+/** Roteador baseado em hash: #home, #import, #song, #learn, #assistant, #tuner */
 export function useRoute() {
   const [route, setRoute] = useState(read);
   useEffect(() => {
